@@ -1,0 +1,30 @@
+Feb 17 10:15:23 server sshd[1234]: Failed password for admin from 192.168.1.100 port 52341 ssh2
+Feb 17 10:15:25 server sshd[1235]: Failed password for root from 192.168.1.100 port 52342 ssh2
+Feb 17 10:15:28 server sshd[1236]: Failed password for admin from 192.168.1.100 port 52343 ssh2
+Feb 17 10:15:30 server sshd[1237]: Invalid user test from 192.168.1.100 port 52344
+Feb 17 10:16:45 server sshd[1240]: Accepted password for john from 10.0.0.50 port 45678 ssh2
+Feb 17 10:17:12 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP SPT=54321 DPT=22
+Feb 17 10:17:13 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP SPT=54322 DPT=23
+Feb 17 10:17:14 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP SPT=54323 DPT=80
+Feb 17 10:17:15 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP SPT=54324 DPT=443
+Feb 17 10:18:30 server apache2[5678]: 192.168.1.200 - - "GET /admin.php?id=1' UNION SELECT username,password FROM users-- HTTP/1.1" 200
+Feb 17 10:19:45 server apache2[5679]: 10.0.0.75 - - "GET /page.php?file=../../../../etc/passwd HTTP/1.1" 404
+Feb 17 10:20:10 server nginx[9012]: 192.168.1.150 "GET /<script>alert('XSS')</script> HTTP/1.1" 400
+Feb 17 10:21:33 server sshd[1250]: Accepted publickey for alice from 172.16.0.100 port 60000 ssh2
+Feb 17 10:22:05 server mysql[3456]: [ERROR] Access denied for user 'root'@'192.168.1.180'
+Feb 17 10:23:15 server postfix[7890]: connection refused from unknown[198.51.100.25]
+Feb 17 10:24:20 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=198.51.100.30 DST=192.168.1.1 PROTO=TCP SPT=12345 DPT=3389
+Feb 17 10:25:00 server sshd[1260]: Failed password for user1 from 192.168.1.100 port 52350 ssh2
+Feb 17 10:25:03 server sshd[1261]: Failed password for user2 from 192.168.1.100 port 52351 ssh2
+Feb 17 10:25:06 server sshd[1262]: Failed password for user3 from 192.168.1.100 port 52352 ssh2
+Feb 17 10:26:30 server apache2[5690]: 10.0.0.88 - - "GET /index.php?cmd=ls;cat /etc/passwd HTTP/1.1" 403
+Feb 17 10:27:45 server kernel: [WARNING] Out of memory - killed process mysql (PID 3456)
+Feb 17 10:28:12 server sshd[1270]: Accepted password for bob from 192.168.1.50 port 55555 ssh2
+Feb 17 10:29:00 server apache2[5695]: 203.0.113.60 - - "POST /login.php HTTP/1.1" 200
+Feb 17 10:30:15 server kernel: [CRITICAL] Filesystem /dev/sda1 is 98% full
+Feb 17 10:31:22 server postfix[7895]: connection timeout from unknown[198.51.100.40]
+Feb 17 10:32:30 server sshd[1280]: Failed password for root from 203.0.113.70 port 60001 ssh2
+Feb 17 10:33:15 server apache2[5700]: 192.168.1.160 - - "GET /admin/ HTTP/1.1" 200
+Feb 17 10:34:00 server kernel: [UFW BLOCK] IN=eth0 OUT= SRC=203.0.113.80 DST=192.168.1.1 PROTO=TCP SPT=11111 DPT=445
+Feb 17 10:35:10 server sshd[1290]: Authentication failure for admin from 192.168.1.100 port 52360
+Feb 17 10:36:25 server apache2[5705]: 10.0.0.95 - - "GET /search.php?q=<img src=x onerror=alert(1)> HTTP/1.1" 200
