@@ -114,7 +114,7 @@ pip install -r requirements.txt
 
 **1. Clone or download the repository:**
 ```bash
-git clone https://github.com/yourusername/CyberSentinel.git
+git clone https://github.com/Ariful-Hoque-IT/CyberSentinel.git
 cd CyberSentinel
 ```
 
@@ -181,7 +181,7 @@ python port_scanner.py localhost --common
 
 **Scan specific port range:**
 ```bash
-python port_scanner.py 192.168.1.1 -p 1-1000
+python port_scanner.py 192.168.0.102 -p 1-1000
 ```
 
 **Scan specific ports:**
